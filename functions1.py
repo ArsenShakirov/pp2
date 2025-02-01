@@ -1,6 +1,6 @@
 def solve(numheads, numlegs):
-    y = (numlegs - 2 * numheads) // 2  # Number of rabbits
-    x = numheads - y  # Number of chickens
+    y = (numlegs - 2 * numheads) // 2
+    x = numheads - y  
     
     return x, y
 
