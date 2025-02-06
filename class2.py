@@ -13,7 +13,7 @@ class Square(Shape):
         return self.length ** 2
 
 shape = Shape()
-print("Shape")
+print(shape.area()) 
 
-square = Square(4)
-print("Square")
+square = Square(5)
+print(square.area()) 
