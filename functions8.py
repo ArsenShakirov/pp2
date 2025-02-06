@@ -9,5 +9,5 @@ def spy_game(nums):
     return False
 
 n = int(input())
-nums = [int(input()) for i in range(n)]
+nums = list(map(int, input().split()))
 print(spy_game(nums))
