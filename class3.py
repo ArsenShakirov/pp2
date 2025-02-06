@@ -14,7 +14,7 @@ class Rectangle(Shape):
         return self.length * self.width
 
 shape = Shape()
-print("Shape")
+print(shape.area)
 
 rectangle = Rectangle(4, 5)
-print("Rectangle")
+print(rectangle.area)
