@@ -7,10 +7,10 @@ class Shape:
 
 class Square(Shape):
     def __init__(self, length):
-        self.length = length
+         super().__init__(length) 
 
     def area(self):
-        return self.length ** 2
+        return self.length ** 2 
 
 shape = Shape()
 print(shape.area()) 
