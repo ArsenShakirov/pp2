@@ -1,9 +1,9 @@
-import os
-def checkPathDetails(path):
-    if os.path.exists(path):
-        print(f"Dir name:  {os.path.dirname(path)}")
-        print(f"File name: {os.path.basename(path)}")
-        
-    else:
-        print("Path is not exist.")
-checkPathDetails("c:\projects")
+def count_lines_in_file(filename):
+    try:
+        with open(filename, 'r', encoding="utf-8") as file:
+            line_count = sum(1 for _ in file)
+        print(f"Total number of lines: {line_count}")
+    except FileNotFoundError:
+        print("Error: File not found.")
+
+count_lines_in_file("example.txt")  
